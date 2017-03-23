@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>フォームについて</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="padding: 20px">
+        <!--form-inlineクラスを付けると、フォーム上の全ての要素を一行で表示してくれる。-->
+        <form class="form-inline" style="margin-bottom:15px">
+            <!--form-groupクラスを付ける。また、has-errorクラスで、対象部分をエラー表示っぽくしてくれる。-->
+            <div class="form-group has-error">
+                <label class="control-label" for="email">Email</label>
+                <!--placeholderがデフォルト値-->
+                <input type="text" id="email" class="form-control" placeholder="email">
+                <!--help-blockクラスは、エラーメッセージの表示などに使えるかも。-->
+                <span class="help-block">Error</span>
+            </div>
+            <div class="form-group">
+                <!--btn-primaryまで付けると、他のボタンより目立たせられる。-->
+                <input type="submit" value="submit" class="btn btn-primary">
+            </div>
+        </form>
+
+        <!--
+        form-horizontalクラスを付けると、form-groupクラスごとに、一行で表示してくれる。
+        Gridシステムと組み合わせると、横幅を綺麗に揃えたレイアウトになる。
+        -->
+        <form class="form-horizontal" style="margin-bottom:15px">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email</label>
+                <div class="control-label col-sm-4">
+                    <input type="text" id="email" class="form-control" placeholder="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-4">
+                    <input type="submit" value="submit" class="btn btn-primary">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
