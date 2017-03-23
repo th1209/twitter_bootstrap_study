@@ -17,9 +17,16 @@
         <!--Gridシステム。横の数字が合計12になるようにレイアウトする。-->
         <!--Gridシステムを使うには、rowクラスで囲む。-->
         <div class="row">
-            <div class="col-sm-3" style="background:orange;">Side1</div>
-            <div class="col-sm-6" style="background:green;">Main</div>
-            <div class="col-sm-3" style="background:orange;">Side2</div>
+            <!--
+            以下のsmやxsといった表記は、ブラウザの相対的なサイズを表している。
+            以下の設定であれば、smサイズのブラウザでは3:6:3表示、
+            xsサイズのブラウザでは、非表示、6:6表示となる。
+            詳細は、以下URLの'Grid Options'の項目を参照すること。
+            http://getbootstrap.com/css/
+            -->
+            <div class="col-sm-3 hidden-xs" style="background:orange;">Side1</div>
+            <div class="col-sm-6 cos-xs-6" style="background:green;">Main</div>
+            <div class="col-sm-3 cos-xs-6" style="background:orange;">Side2</div>
         </div>
     </div>
 
