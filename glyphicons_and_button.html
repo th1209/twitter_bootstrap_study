@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Glyphiconsとボタンについて</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="padding: 20px">
+        <!--
+        bootstrapでは、glyphiconと呼ばれる画像を使うことができる。
+        以下のように、glyphiconクラスと、使いたいアイコン名をクラス名とすることで、
+        アイコンが表示される。
+        使えるアイコン一覧については、公式サイトの以下を参照すること。
+        http://getbootstrap.com/components/
+        -->
+        <p><i class="glyphicon glyphicon-book"></i></p>
+
+
+        <!--
+        ボタンの種類については、以下URLの、Buttonsの欄を参照すること。
+        http://getbootstrap.com/css/
+        -->
+        <button class="btn btn-primary">
+            <i class="glyphicon glyphicon-book"></i> Push Me!
+        </button>
+
+
+        <!--btn-groupクラスを付けると、複数ボタンを結合できる(あまり使わないかも)。-->
+        <div class="btn-group">
+            <button class="btn btn-primary">Push Me!</button>
+            <button class="btn btn-success">Push Me!</button>
+            <button class="btn btn-danger">Push Me!</button>
+        </div>
+
+
+        <div class="btn-group">
+            <button class="btn btn-primary">Action</button>
+            <!--以下のクラスを設定することで、トグルダウン形式のボタンを作ることができる。-->
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <!--caretで、下矢印を表示。-->
+                <span class="caret"></span>
+            </button>
+
+            <!--トグルダウン形式で表示される各項目は、dropdown-menuクラス-->
+            <ul class="dropdown-menu">
+                <li><a href="">Item1</a></li>
+                <li><a href="">Item2</a></li>
+                <!--dividerクラスで、項目を区切れる-->
+                <li class="divider"></li>
+                <li><a href="">Item3</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
