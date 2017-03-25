@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>プログレスバーについて</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <div class="container" style="padding: 20px">
+        <!--プログレスバー。widthと組み合わせるのがポイント。-->
+        <div class="progress">
+           <div class="progress-bar progress-bar-primary active" style="width:60%"></div>
+        </div>
+
+        <!--
+        stripedとすると、ストライプ表示に。
+        activeとすると、アニメーション表示に。
+        -->
+        <div class="progress progress-striped">
+            <div class="progress-bar progress-bar-info" style="width:60%"></div>
+        </div>
+
+         <!--プログレスバーを複数配置すると、バーの途中で色を変えることができる。-->
+        <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-info" style="width:20%"></div>
+            <div class="progress-bar progress-bar-primary" style="width:20%"></div>
+            <div class="progress-bar progress-bar-warning" style="width:20%"></div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
