@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modalウィンドウについて</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <div class="container" style="padding: 20px">
+        <!--ダイアログと対応する要素。hrefでダイアログのidを指定する-->
+        <a data-toggle="modal" href="#myModal" class="btn btn-primary">Show me!</a>
+
+        <!--以下、ダイアログ。-->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!--ダイアログは、header、body、footerに分けて表示できる。-->
+                    <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">My Modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        こんにちは！
+                    </div>
+                    <div class="modal-footer">
+                        <h4 class="btn btn-primary" class="close" data-dismiss="modal">OK!</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
