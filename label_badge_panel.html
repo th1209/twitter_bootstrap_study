@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>label, badge, panelについて</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <div class="container" style="padding: 20px">
+        <!--ラベル-->
+        <p>Product A <span class="label label-primary">NEW!</span></p>
+
+        <!--バッジ-->
+        <p>Inbox <span class="badge">5</span></p>
+
+        <!--panel 単一行形式-->
+        <div class="alert alert-info">
+            お知らせ
+            <!--panel 以下のようにすると、panelを消去できるようになる。&times;は、いわゆるバツアイコン-->
+            <button class="close" data-dismiss="alert">&times;</button>
+        </div>
+
+        <!--panel ヘッダと内容形式-->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                お知らせ
+            </div>
+            <div class="panel-body">
+                お知らせ内容
+            </div>
+        </div>
+
+        <!--labelやbadgeは、値が空の場合は何も表示されない。覚えておくと、ifなどでの場合分けが楽になる。-->
+        <p><span class="label label-primary"></span></p>
+        <p><span class="badge"></span></p>
+
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
